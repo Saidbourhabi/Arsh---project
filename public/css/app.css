@@ -1,3 +1,70 @@
+#Compny {
+  width: 100%;
+  height: 15vh;
+  background: #f5f6f8;
+  overflow: hidden;
+  position: relative;
+}
+#Compny .compny-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#Compny .compny-content .Slide-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  animation: slide 30s linear infinite;
+}
+#Compny .compny-content .Slide-row .slide-item {
+  flex: 0 0 auto;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+  opacity: 0.7;
+}
+#Compny .compny-content .Slide-row:hover {
+  animation-play-state: paused;
+}
+#Compny .compny-content .Slide-row:hover .slide-item {
+  opacity: 1;
+}
+#Compny .compny-content .Slide-row .compny-logo-size {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  #Compny .compny-content .Slide-row {
+    gap: 5rem;
+    animation: slide 20s linear infinite;
+  }
+  #Compny .compny-content .Slide-row .compny-logo-size {
+    width: 80px;
+  }
+  #Compny .compny-content .Slide-row .slide-item {
+    opacity: 0.8;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #Compny .compny-content .Slide-row {
+    gap: 5rem;
+    animation: slide 25s linear infinite;
+  }
+  #Compny .compny-content .Slide-row .compny-logo-size {
+    width: 90px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
