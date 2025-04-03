@@ -18,3 +18,20 @@ dropdowns.forEach(dropdown => {
         }
     });
 });
+
+// -----------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const heroImg = document.querySelector('.hero-img');
+    
+    // Make the animation slightly organic
+    heroImg.style.animationDuration = `${5 + Math.random() * 1}s`; // 5-6 seconds
+    
+    // Optional: Add event listeners for interaction
+    heroImg.addEventListener('mouseenter', () => {
+        heroImg.style.animationPlayState = 'paused';
+    });
+    
+    heroImg.addEventListener('mouseleave', () => {
+        heroImg.style.animationPlayState = 'running';
+    });
+});
