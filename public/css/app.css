@@ -1,3 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#About {
+  width: 100%;
+  height: 60vh;
+}
+#About .about-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-inline: 1rem;
+}
+#About .about-content .tittle-content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#About .about-content .tittle-content h1 {
+  color: #37517d;
+  font-size: x-large;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 5px solid #46b1e3;
+}
+#About .about-content .Down-row-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-inline: 1rem;
+}
+#About .about-content .Down-row-content .left-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: start;
+  gap: 2rem;
+}
+#About .about-content .Down-row-content .left-info p {
+  color: #000;
+}
+#About .about-content .Down-row-content .left-info .span-list {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: start;
+  gap: 0.5rem;
+}
+#About .about-content .Down-row-content .left-info .span-list span {
+  color: #000;
+}
+#About .about-content .Down-row-content .right-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: start;
+  gap: 2rem;
+}
+#About .about-content .Down-row-content .right-info p {
+  color: #000;
+}
+#About .about-content .Down-row-content .right-info button {
+  background: #fff;
+  outline: none;
+  border: 3px solid #46b1e3;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+#About .about-content .Down-row-content .right-info button:hover {
+  background: #46b1e3;
+  color: #fff;
+}
+#About .about-content .Down-row-content .right-info button a {
+  text-decoration: none;
+  color: #46b1e3;
+  font-size: large;
+  font-weight: bold;
+  word-spacing: 5px;
+  transition: 0.3s;
+}
+#About .about-content .Down-row-content .right-info button a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #About {
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 0;
+  }
+  #About .about-content .Down-row-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #About .about-content .Down-row-content .left-info {
+    width: 100%;
+  }
+  #About .about-content .Down-row-content .right-info {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  #About {
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 0;
+  }
+}
 #Compny {
   width: 100%;
   height: 15vh;
