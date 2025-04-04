@@ -4,3 +4,4 @@ colors
 #3c4b69
 #f5f6f8
 #818181
+#ebedf2
