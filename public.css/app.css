@@ -1,75 +1,21 @@
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
-#accordion {
-  width: 100%;
-}
-#accordion.accordion .accordion-container {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 24px;
-  overflow: hidden;
-}
-#accordion.accordion .accordion-item {
-  width: 100%;
-}
-#accordion.accordion .accordion-item[open] .accordion-icon {
-  transform: rotate(45deg);
-}
-#accordion.accordion .accordion-item:not(:first-of-type) .accordion-trigger {
-  border-top: #37517d solid 2px;
-}
-#accordion.accordion .accordion-trigger {
-  width: 100%;
-  display: block;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-  border: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-#accordion.accordion .accordion-trigger .accordion-title {
-  flex-grow: 1;
-  color: #46b1e3;
-}
-#accordion.accordion .accordion-icon {
-  transition: transform 0.5s;
-  font-size: 24px;
-  color: #46b1e3;
-}
-#accordion.accordion .accordion-content p {
-  padding: 1rem 0;
-  color: #000;
-  line-height: 1.5;
-}
-
 #Question {
   width: 100%;
-  height: fit-content;
-  background: #f5f6f8;
-  padding: 2rem 0;
+  height: 90vh;
 }
 #Question .Questions-content {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  padding-inline: 1rem;
 }
 #Question .Questions-content .left-side {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: self-start;
+  justify-content: start;
   gap: 2rem;
 }
 #Question .Questions-content .left-side .left-tittle {
@@ -80,69 +26,28 @@
   gap: 1rem;
 }
 #Question .Questions-content .left-side .left-tittle h1 {
-  color: #3c4b69;
-  font-size: large;
-}
-#Question .Questions-content .left-side .left-tittle span {
   color: #37517d;
-  font-size: larger;
+  font-size: medium;
 }
-#Question .Questions-content .left-side .left-tittle p {
-  color: #000;
+#Question .Questions-content .left-side .left-tittle h1 span {
+  font-size: large;
+  font-weight: bold;
+  color: #37517d;
+}
+#Question .Questions-content .left-side .accordion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 #Question .Questions-content .right-side {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50%;
   height: 100%;
 }
 #Question .Questions-content .right-side .vecto-img {
-  width: 500px;
+  width: 300px;
 }
 
-@media (max-width: 768px) {
-  #Question {
-    width: 100%;
-    height: fit-content;
-  }
-  #Question .Questions-content {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  #Question .Questions-content .left-side {
-    width: 100%;
-  }
-  #Question .Questions-content .right-side {
-    width: 100%;
-  }
-  #Question .Questions-content .right-side .vecto-img {
-    width: 350px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  #Question {
-    width: 100%;
-    height: fit-content;
-  }
-  #Question .Questions-content {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  #Question .Questions-content .left-side {
-    width: 100%;
-  }
-  #Question .Questions-content .right-side {
-    width: 100%;
-  }
-  #Question .Questions-content .right-side .vecto-img {
-    width: 400px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
